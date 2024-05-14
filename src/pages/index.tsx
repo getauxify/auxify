@@ -127,7 +127,7 @@ const footerNavigation = {
   ],
 };
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -269,7 +269,7 @@ export default function Home() {
           <div className="py-24 sm:py-32">
             {session && (
               <div>
-                <div>Email: {session.user.email}</div>
+                <div>Email: {session.user.email}</div> ``
               </div>
             )}
             <div className="mx-auto max-w-6xl px-6 lg:px-8">
